@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Info Scraper</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Company Info Scraper</h1>
+        <form method="POST" action="/">
+            <div>
+                <label for="company_name">Company Name:</label>
+                <input type="text" id="company_name" name="company_name" required>
+            </div>
+            <div>
+                <label for="company_url">Company Website URL:</label>
+                <input type="url" id="company_url" name="company_url" required>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+        {% if result %}
+        <h2>Results</h2>
+        <ul>
+            {% for category, status in result.items() %}
+            <li><strong>{{ category }}:</strong> {{ status }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+</body>
+</html>
