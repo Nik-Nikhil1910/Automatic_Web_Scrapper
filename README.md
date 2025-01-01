@@ -1,4 +1,7 @@
 # Automatic_Web_Scrapper
+# How it works 
+This automatic web scrapper takes values for the Company Name and URL of the Website of the company. It then generates values for the features of the table in https://docs.google.com/spreadsheets/d/1Uij5pAN0qBF0O8MglizC_Uzx_u2rNMKFIcKvYrlcMb0/edit?usp=sharing
+User is to use these values to fill out the table themselves. The matches that led to a certain output are present in the log_file.log.
 
 # How to run?
 ### STEPS:
