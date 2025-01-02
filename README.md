@@ -8,11 +8,11 @@ User is to use these values to fill out the table themselves. The matches that l
 
 
 ```bash
-conda create -n mlproj python=3.11.5 -y 
+conda create -n auto-web-scrapper-env python=3.11.5 -y 
 ```
 
 ```bash
-conda activate mlproj
+conda activate auto-web-scrapper-env
 ```
 
 
